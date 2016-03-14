@@ -8,7 +8,7 @@ $(function() {
 
         self.brand = ko.pureComputed(function() {
             if (self.name())
-                return gettext("OctoPrint") + ": " + self.name();
+                return self.name();
             else
                 return gettext("OctoPrint");
         });
